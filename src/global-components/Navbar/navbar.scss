@@ -46,7 +46,7 @@
   }
 
   span {
-    font-family: "Roboto Medium", serif;
+    font-family: "Roboto Medium", sans-serif;
     font-size: 28px;
     margin-right: 10vw;
     margin-left: 50px;
@@ -58,7 +58,7 @@
   }
 
   #register-btn {
-    font-family: "Roboto Medium", serif;
+    font-family: "Roboto Medium", sans-serif;
     color: #fff;
     background-color: var(--color-primary-blue);
     transition: all .1s;
@@ -67,7 +67,7 @@
   #login-btn {
     justify-self: end;
     margin-right: 14px;
-    font-family: "Roboto Regular", serif;
+    font-family: "Roboto Regular", sans-serif;
     color: var(--color-primary-blue);
     border: var(--color-primary-blue) solid 1px;
     background-color: transparent;
@@ -184,14 +184,14 @@
     }
 
     #register-btn {
-      font-family: "Roboto Medium", serif;
+      font-family: "Roboto Medium", sans-serif;
       color: #fff;
       background-color: var(--color-primary-orange);
     }
 
     #login-btn {
       margin-right: 12px;
-      font-family: "Roboto Regular", serif;
+      font-family: "Roboto Regular", sans-serif;
       color: var(--color-primary-orange);
       border: var(--color-primary-orange) solid 1px;
     }
