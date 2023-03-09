@@ -1,0 +1,40 @@
+#mobile-post-bar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
+  margin-bottom: 4px;
+  padding-bottom: 18px;
+
+
+  .more-options-icon, .mobile-bar-chevron {
+    font-size: 24px;
+    color: var(--color-dark-grey-font);
+    cursor: pointer;
+    margin: 0 22px 0 8px;
+  }
+
+  .more-options-icon {
+    margin: 0 0 0 auto;
+  }
+
+  h1 {
+    font-family: "Roboto Regular", serif;
+    margin: 24px 0 24px 16px;
+    flex-basis: 100%;
+    font-size: 24px;
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  #mobile-post-bar {
+    .more-options-icon, .mobile-bar-chevron {
+      font-size: 18px;
+    }
+  }
+}

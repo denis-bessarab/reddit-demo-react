@@ -1,0 +1,31 @@
+#side-navbar {
+  position: sticky;
+  left: 0;
+  top: 0;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 0 0;
+  margin-top: 77px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding-top: 50px;
+
+
+  .utilities {
+    margin-top: auto;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  #side-navbar {
+    display: none;
+  }
+}
+
+#side-navbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+

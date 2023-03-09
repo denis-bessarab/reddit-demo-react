@@ -1,0 +1,26 @@
+#app {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#content {
+  position: relative;
+  width: 100%;
+  margin-top: 77px;
+  box-sizing: border-box;
+  padding: 50px;
+  overflow-x: hidden;
+  background-color: #F5F5F5;
+}
+
+
+@media screen and (max-width: 1200px) {
+  #content {
+    padding: 0;
+  }
+}

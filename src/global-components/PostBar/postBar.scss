@@ -1,0 +1,25 @@
+.post-bar-heading {
+  font-size: 18px;
+  margin: 0 0 24px 0;
+}
+
+#post-bar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 68px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
+  margin-bottom: 32px;
+
+
+  .more-options-icon {
+    margin: 0 22px 0 auto;
+    font-size: 24px;
+    color: var(--color-dark-grey-font);
+    cursor: pointer;
+  }
+}

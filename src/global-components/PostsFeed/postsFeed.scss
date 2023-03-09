@@ -1,0 +1,31 @@
+#posts-feed {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  position: relative;
+}
+
+#next-field {
+  background-color: #fff;
+  width: 100%;
+  padding: 18px 16px;
+  position: relative;
+
+  button {
+    border: none;
+    background-color: var(--color-primary-blue);
+    color: #fff;
+    border-radius: 50px;
+    font-family: "Roboto Medium", serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    float: right;
+    margin-right: 32px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  #posts-feed {
+    width: 100%;
+  }
+}

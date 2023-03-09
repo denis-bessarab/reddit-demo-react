@@ -1,0 +1,246 @@
+#navbar-top {
+  height: 77px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+
+
+  input {
+    border: none;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+    color: var(--color-grey-font);
+    outline: none;
+    padding: 14px 50px;
+    width: 40vw;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  input:focus {
+    outline: var(--color-primary-blue) 1px solid;
+  }
+
+  input:hover {
+    outline: var(--color-primary-blue) 1px solid;
+  }
+
+  input::placeholder {
+    font-family: "Roboto Regular";
+    color: var(--color-grey-font);
+    font-size: 14px;
+  }
+
+  button {
+    box-sizing: border-box;
+    padding: 14px 50px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+  }
+
+  span {
+    font-family: "Roboto Medium", serif;
+    font-size: 28px;
+    margin-right: 10vw;
+    margin-left: 50px;
+  }
+
+  .buttons-container {
+    position: absolute;
+    right: 50px;
+  }
+
+  #register-btn {
+    font-family: "Roboto Medium", serif;
+    color: #fff;
+    background-color: var(--color-primary-blue);
+    transition: all .1s;
+  }
+
+  #login-btn {
+    justify-self: end;
+    margin-right: 14px;
+    font-family: "Roboto Regular", serif;
+    color: var(--color-primary-blue);
+    border: var(--color-primary-blue) solid 1px;
+    background-color: transparent;
+    transition: all .1s;
+  }
+
+  #register-btn:hover {
+    background-color: var(--color-secondary-blue);
+  }
+
+  #login-btn:hover {
+    color: var(--color-secondary-blue);
+    border: var(--color-secondary-blue) solid 1px;
+  }
+
+  #register-btn.clicked {
+    background-color: var(--color-faded-blue);
+  }
+
+  #login-btn.clicked {
+    color: var(--color-faded-blue);
+    border: var(--color-faded-blue) solid 1px;
+  }
+
+
+  .search-container {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    color: var(--color-grey-font);
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar-top {
+
+    .hamburger-menu {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      margin-left: 16px;
+      cursor: pointer;
+      position: relative;
+
+      span {
+        width: 70%;
+        position: absolute;
+        border-radius: 2px;
+        border: black solid 1px;
+        margin: 0;
+        transition: all .2s;
+        opacity: 1;
+      }
+
+      span:nth-child(1) {
+        transform: translateY(-7px);
+        -webkit-transform: translateY(-7px);
+      }
+
+      span:nth-child(2) {
+      }
+
+      span:nth-child(3) {
+        transform: translateY(7px);
+        -webkit-transform: translateY(7px);
+      }
+    }
+
+    .hamburger-menu.active {
+      span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        display: none;
+      }
+
+      span:nth-child(3) {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+    }
+
+
+    .search-container {
+      display: none;
+    }
+
+    button {
+      padding: 12px 16px;
+      border-radius: 50px;
+    }
+
+    span {
+      margin-left: 12px;
+    }
+
+    .buttons-container {
+      right: 16px;
+    }
+
+    #register-btn {
+      font-family: "Roboto Medium", serif;
+      color: #fff;
+      background-color: var(--color-primary-orange);
+    }
+
+    #login-btn {
+      margin-right: 12px;
+      font-family: "Roboto Regular", serif;
+      color: var(--color-primary-orange);
+      border: var(--color-primary-orange) solid 1px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar-top {
+    #register-btn.clicked {
+      background-color: var(--color-primary-orange);
+    }
+
+    #login-btn.clicked {
+      color: var(--color-primary-orange);
+    }
+
+    #register-btn:hover {
+      background-color: var(--color-primary-orange);
+    }
+
+    #login-btn:hover {
+      color: var(--color-primary-orange);
+      border: var(--color-primary-orange) solid 1px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #navbar-top {
+    span {
+      font-size: 18px;
+      margin-right: 10vw;
+      margin-left: 12px;
+    }
+
+    button {
+      padding: 12px 16px;
+      font-size: 14px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #navbar-top {
+
+
+  }
+}

@@ -1,0 +1,112 @@
+#badge {
+  display: flex;
+  align-items: center;
+  line-height: normal;
+  padding: 10px 18px;
+  border-radius: 50px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: 24px;
+  position: relative;
+
+  .badge-copy {
+    margin-left: 10px;
+  }
+
+  .badge-chevron {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .badge-icon {
+    font-size: 22px;
+  }
+
+  .fake-chevron {
+    display: none;
+  }
+
+}
+
+#badge.filled {
+  color: var(--color-primary-blue);
+  background-color: #F5F5F5;
+}
+
+#badge.text {
+  color: var(--color-dark-grey-font);
+  background-color: transparent;
+}
+
+#badge.active {
+  color: var(--color-primary-blue);
+}
+
+#badge.text:not(.nohover):hover {
+  color: var(--color-primary-blue);
+}
+
+#badge-options {
+  position: absolute;
+  height: 256px;
+  width: 184px;
+  border-radius: 8px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  right: 0;
+  top: 42px;
+  box-sizing: border-box;
+  padding: 24px;
+  overflow-y: scroll;
+  z-index: 2;
+  border: #CECECE 1px solid;
+
+  .badge-option {
+    flex-basis: 100%;
+    margin-bottom: 16px;
+    color: var(--color-grey-font)
+  }
+}
+
+
+#badge-options::-webkit-scrollbar {
+  width: 8px;
+}
+
+#badge-options::-webkit-scrollbar-track {
+  visibility: hidden;
+  margin: 6px;
+}
+
+#badge-options::-webkit-scrollbar-thumb {
+  background: #E3E3E3;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  #badge {
+    margin-left: 0;
+    padding: 10px 16px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  #badge {
+    .badge-copy {
+      font-size: 14px;
+    }
+
+    .badge-icon {
+      font-size: 18px;
+    }
+
+    .badge-chevron {
+      font-size: 18px;
+    }
+
+
+  }
+}
+
